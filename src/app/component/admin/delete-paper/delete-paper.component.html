@@ -1,0 +1,29 @@
+<app-top-navbar></app-top-navbar>
+<app-center-part></app-center-part>
+<app-main-navbar></app-main-navbar>
+<div class="container">
+    <h2>All Paper</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Paper Id</th>
+                <th>Name</th>
+                <th>Course Id</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let paper of papers">
+                <td>{{paper.pid}}</td>
+                <td>{{paper.name}}</td>
+                <td>{{paper.courseId}}</td>
+                <td> <button mat-raised-button color="accent" class="ml20" (click)="deletePaper(paper)">
+                    Delete
+                </button></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-success" [routerLink]="['/admin']" >BACK</button>
+</div>
+

@@ -1,0 +1,48 @@
+<body id="top" >
+    <div style="background-color: cyan;">
+    
+        <nav id="mainav" class="hoc clear">   
+    <ul class="clear">
+      
+        <li class="active" style="color: black;" [routerLink]="['/admin']" routerLinkActive="router-link-active" >Home</li>
+        <li style="color: black;" >View 
+            <ul>
+                <li >View courses
+                <ul>
+                    <li [routerLink]="['/admin/viewcourse']" routerLinkActive="router-link-active" >All Courses</li>
+                    <li>Stream-Wise</li>
+                </ul>
+                </li>
+                <li >View student
+                    <ul>
+                    <li [routerLink]="['/admin/viewstudent']" routerLinkActive="router-link-active" >All Student</li>
+                    <li>Semester Wise</li>
+                    <li>Stream</li>
+                    <li>Enroll Wise</li>
+                 </ul>
+                 </li>
+                <li [routerLink]="['/admin/viewpaper']" routerLinkActive="router-link-active" >View Paper</li>
+              </ul>
+        </li>
+        <li>Add/Delete 
+            <ul>
+              <li [routerLink]="['/admin/addcourse']" routerLinkActive="router-link-active" >Add Course</li>
+              <li>Paper
+                <ul>
+                  <li>Add Paper</li>
+                  
+                  <li [routerLink]="['/admin/deletepaper']" routerLinkActive="router-link-active" >All Paper</li>
+     
+                </ul>
+              </li>
+              <li [routerLink]="['/admin/addstudent']" routerLinkActive="router-link-active" >Add Student</li>
+            </ul>
+          </li>
+        <li>Change Visibility setting for paper</li>
+      <li>display result/start course regist.</li>
+    </ul>
+    </nav>
+</div>
+</body>
+
+ 

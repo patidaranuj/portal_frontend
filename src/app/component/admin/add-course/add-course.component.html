@@ -1,0 +1,13 @@
+<app-top-navbar></app-top-navbar>
+<app-center-part></app-center-part>
+<app-main-navbar></app-main-navbar>
+    <h1>ADD COURSE</h1>
+    <form name="courseform" #courseform="ngForm" (ngSubmit)="add()">
+            <label>Course Name</label><input type="text" [(ngModel)]="addcourse.courseName" name="courseName" placeholder="Enter Name of Course" /><br>
+            <label>Course Id</label><input type="text" [(ngModel)]="addcourse.courseId" name="courseId" placeholder="Enter Course Id"/><br>
+            <label>Course Branch</label><input type="text"  [(ngModel)]="addcourse.branch" name="branch" placeholder="Enter branch"/>    
+        <div>
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+

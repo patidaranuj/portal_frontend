@@ -1,0 +1,30 @@
+<app-top-navbar></app-top-navbar>
+<app-center-part></app-center-part>
+<app-main-navbar></app-main-navbar>
+<div class="container">
+    <h2>All Courses</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Enrollment Id</th>
+                <th>Name</th>
+                <th>Course Name</th>
+                <th>Branch</th>
+                <th>Semester</th>
+                <th>Email</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{student.enrollId}}</td>
+                <td>{{student.Name}}</td>
+                <td>{{student.course}}</td>
+                <td>{{student.branch}}</td>
+                <td>{{student.sem}}</td>
+                <td>{{student.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-success" [routerLink]="['/admin']" >BACK</button>
+</div>

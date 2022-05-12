@@ -1,0 +1,21 @@
+.container{
+    background-color: aqua;
+     margin-top: 150px; 
+}
+table,th,td{
+    border: 3px double rgb(76,76,77);
+}
+
+td,th{
+    text-align: center;
+}
+
+tr:hover{
+    background-color: aquamarine;
+}
+.head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: inline-end;
+    color: rgb(red, green, blue);
+    text-align: center;
+}

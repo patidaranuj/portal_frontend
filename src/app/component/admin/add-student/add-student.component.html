@@ -1,0 +1,19 @@
+<app-top-navbar></app-top-navbar>
+<app-center-part></app-center-part>
+<app-main-navbar></app-main-navbar>
+<div class="container">
+    <form name="studentform" #studentform="ngForm" (ngSubmit)="add()">
+        <label>Enroll Id</label><input type="text" [(ngModel)]="addstudent.enrollId" name="enrollId" placeholder="Student Enrollment Id"/><br>
+        <label>Name</label><input type="text" [(ngModel)]="addstudent.name" name="name" placeholder="Student Name"/><br>
+        <label>Branch</label><input type="text" [(ngModel)]="addstudent.branch" name="branch" placeholder="Branch"/><br>
+        <label>Sem</label><input type="text" [(ngModel)]="addstudent.sem" name="sem" placeholder="Semester"/><br>
+        <label>Email</label><input type="text" [(ngModel)]="addstudent.email" name="email" placeholder="Email"/><br>
+        <label>Password</label><input type="text" [(ngModel)]="addstudent.password" name="password" placeholder="Password"/><br>
+        <label>course</label><input type="text" [(ngModel)]="addstudent.course" name="course" placeholder="Course"/><br>
+        <div>
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+
+</div>
+

@@ -1,0 +1,23 @@
+<app-top-navbar></app-top-navbar>
+<app-center-part></app-center-part>
+<app-main-navbar></app-main-navbar>
+<div class="container">
+    <h2>All Courses</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Course Id</th>
+                <th>Branch</th>
+                <th>Course Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let it of course">
+                <td>{{it.courseId}}</td>
+                <td>{{it.branch}}</td>
+                <td>{{it.courseName}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-success" [routerLink]="['/admin']" >BACK</button>
+</div>
